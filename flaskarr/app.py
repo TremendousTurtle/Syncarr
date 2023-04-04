@@ -4,7 +4,7 @@ from flaskarr.extensions import ext_celery, db, ma, migrate, socketio
 
 def create_app(test_config=None, celery_worker=False):
     # create and config app
-    flask_app = Flask(__name__, instance_path='/var/lib/syncarr/flaskarr', instance_relative_config=True)
+    flask_app = Flask(__name__, instance_path='/var/lib/syncarr/instance', instance_relative_config=True)
     flask_app.config.from_mapping(
         SECRET_KEY='dev',
         CELERY_CONFIG={
