@@ -1,0 +1,109 @@
+.spinner-border {
+    --bs-spinner-animation-speed: 1.25s;
+}
+
+.bi {
+    width: 1em;
+    height: 1em;
+    fill: currentcolor
+}
+
+.cs-gutter {
+    --bs-gutter-x: 3rem;
+}
+
+.cs-navbar {
+    padding: .75rem 0;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, rgba(var(--bs-primary-rgb), 1), rgba(var(--bs-primary-rgb), 0.95));
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(0,0,0,0.15)
+}
+
+@media (max-width: 575.98px) {
+    .cs-navbar .cs-navbar-toggle {
+        width:4.25rem
+    }
+}
+
+.cs-navbar .navbar-toggler {
+    padding: 0;
+    margin-right: -.5rem;
+    border: 0
+}
+
+.cs-navbar .navbar-toggler:first-child {
+    margin-left: -.5rem
+}
+
+.cs-navbar .navbar-toggler .bi {
+    width: 1.5rem;
+    height: 1.5rem
+}
+
+.cs-navbar .navbar-toggler:focus {
+    box-shadow: none
+}
+
+.cs-navbar .navbar-brand {
+    transition: .2s ease-in-out transform
+}
+
+.cs-navbar .navbar-brand:hover {
+    transform: rotate(-5deg) scale(1.1)
+}
+
+.cs-navbar .navbar-toggler,.cs-navbar .nav-link {
+    padding-right: .25rem;
+    padding-left: .25rem;
+    color: rgba(255,255,255,0.90)
+}
+
+.cs-navbar .navbar-toggler:hover,.cs-navbar .navbar-toggler:focus,.cs-navbar .nav-link:hover,.cs-navbar .nav-link:focus {
+    color: #fff
+}
+
+.cs-navbar .navbar-toggler.active,.cs-navbar .nav-link.active {
+    font-weight: 600;
+    color: #fff
+}
+
+.cs-navbar .navbar-nav-svg {
+    display: inline-block;
+    vertical-align: -.125rem
+}
+
+.cs-navbar .offcanvas-sm {
+    background-color: var(--bs-primary);
+    border-left: 0
+}
+
+@media (max-width: 575.98px) {
+    .cs-navbar .offcanvas-sm {
+        box-shadow:0 1rem 3rem rgba(0,0,0,0.175)
+    }
+}
+
+.sidebar {
+    --bs-offcanvas-width: 250px;
+    --bs-offcanvas-padding-y: 5rem;
+    --bs-offcanvas-padding-x: 2rem;
+}
+
+.cs-navbar .dropdown-toggle:focus:not(:focus-visible) {
+    outline: 0
+}
+
+.cs-navbar .dropdown-menu {
+    --bs-dropdown-min-width: 12rem;
+    --bs-dropdown-link-hover-bg: rgba(var(--bs-primary-rgb), .1);
+    --bs-dropdown-font-size: .875rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15)
+}
+
+.cs-navbar .dropdown-item.current {
+    font-weight: 600;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23292b2c' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1rem top 0.6rem;
+    background-size: .75rem .75rem
+}

@@ -1,0 +1,15 @@
+celery==5.2.7
+eventlet==0.33.3
+Flask==2.2.2
+Flask-CeleryExt==0.4.3
+flask_marshmallow==0.14.0
+Flask_Migrate==4.0.0
+Flask-SocketIO==5.3.2
+Flask-SQLAlchemy==3.0.2
+flower==1.2.0
+marshmallow==3.19.0
+marshmallow-sqlalchemy==0.28.1
+psycopg2==2.9.5
+redis==4.3.5
+requests==2.25.1
+SQLAlchemy==1.4.44
